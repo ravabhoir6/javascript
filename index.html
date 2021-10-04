@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+   /* STRING CONCATENATION
+Operators aren’t just for numbers! When a + operator is used on two strings, it appends the right string to the left string:*/
+
+console.log('hi' + 'ya'); // Prints 'hiya'
+console.log('wo' + 'ah'); // Prints 'woah'
+console.log('I love to ' + 'code.')
+
+console.log('middle' + ' ' + 'space'); 
+// Prints 'middle space'
+
+console.log('One' + ', ' + 'two' + ', ' + 'three!'); 
+// Prints 'One, two, three!'
+
+/*COMPARISON OPPERATORS
+When writing conditional statements, sometimes we need to use different types of operators to compare values. These operators are called comparison operators.
+
+Here is a list of some handy comparison operators and their syntax:
+
+Less than: <
+Greater than: >
+Less than or equal to: <=
+Greater than or equal to: >=
+Is equal to: ===
+Is not equal to: !==*/
+
+/*LOGICAL OPERATORS
+Working with conditionals means that we will be using booleans, true or false values. In JavaScript, there are operators that work with boolean values known as logical operators. We can use logical operators to add more sophisticated logic to our conditionals. There are three logical operators:
+
+the and operator (&&)
+the or operator (||)
+the not operator, otherwise known as the bang operator (!)
+When we use the && operator, we are checking that two things are true:
+
+
+
+console.log('Hello'.length); // Prints 5
+//The . is another operator! We call it the dot operator.//
+
+
+
+
+
+
+/*METHODS
+Remember that methods are actions we can perform. JavaScript provides a number of string methods.
+
+We call, or use, these methods by appending an instance with:
+
+a period (the dot operator)
+the name of the method
+opening and closing parentheses
+E.g. 'example string'.methodName().
+
+Does that syntax look a little familiar? When we use console.log() we’re calling the .log() method on the console object. Let’s see console.log() and some real string methods in action!
+
+console.log('hello'.toUpperCase()); // Prints 'HELLO'
+console.log('Hey'.startsWith('H')); // Prints true
+Let’s look at each of the lines above:
+
+On the first line, the .toUpperCase() method is called on the string instance 'hello'. The result is logged to the console. This method returns a string in all capital letters: 'HELLO'.
+On the second line, the .startsWith() method is called on the string instance 'Hey'. This method also accepts the character 'H' as an input, or argument, between the parentheses. Since the string 'Hey' does start with the letter 'H', the method returns the boolean true.*/
+
+
+console.log(Math.floor(Math.random() * 100));//math.floor gives a full number and not a float and math.random gives a random number
+console.log(Number.isInteger(2017));//.isInteger tells us if the given number is a integer or not
+console.log(Math.ceil(43.8));//coverts the numbers from float to integers
+
+ 
+//VARIABLES
+let meal = 'Enchiladas';
+console.log(meal); // Output: Enchiladas
+meal = 'Burrito';
+console.log(meal); // Output: Burrito
+
+
+/* STRING INTERPOLATION
+In the ES6 version of JavaScript, we can insert, or interpolate, variables into strings using template literals. Check out the following example where a template literal is used to log strings together:
+
+const myPet = 'armadillo';
+console.log(`I own a pet ${myPet}.`);
+// Output: I own a pet armadillo.
+
+const myPet = 'armadillo';
+console.log(`I own a pet ${myPet}.`);
+// Output: I own a pet armadillo.*/
+
+/* TERNARY OPERATORS
+The condition, isNightTime, is provided before the ?.
+
+Two expressions follow the ? and are separated by a colon :.
+
+If the condition evaluates to true, the first expression executes.
+
+If the condition evaluates to false, the second expression executes.*/
+
+/*SWITCH OPERATORS
+let groceryItem = 'papaya';
+
+switch (groceryItem) {
+  case 'tomato':
+    console.log('Tomatoes are $0.49');
+    break;
+  case 'lime':
+    console.log('Limes are $1.49');
+    break;
+  case 'papaya':
+    console.log('Papayas are $1.29');
+    break;
+  default:
+    console.log('Invalid item');
+    break;
+}
+
+ Prints 'Papayas are $1.29'*/
+
+ /*FUNCTIONS(mostly check the photos in the folder)
+ DEFAULT PARAMETERS
+ function greeting (name = 'stranger') {
+  console.log(`Hello, ${name}!`)
+}
+ 
+greeting('Nick') // Output: Hello, Nick!
+greeting() // Output: Hello, stranger!
+ */
+
+/* USE OF RETURN IN FUNCTIONS
+function rectangleArea(width, height) {
+  if (width < 0 || height < 0) {
+    return 'You need positive integers to calculate area!';
+  }
+  return width * height;
+}
+
+HELPER FUNCTIONS;
+function multiplyByNineFifths(number) {
+  return number * (9/5);
+};
+ 
+function getFahrenheit(celsius) {
+  return multiplyByNineFifths(celsius) + 32;
+};
+ 
+getFahrenheit(15); // Returns 59
+
+***FUNCTION EXPRESSIONS**
+variableName(argument1, argument2):
+
+ARROW FUNCTIONS:
+Arrow functions remove the need to type out the keyword function every time you need to create a function. Instead, you first include the parameters inside the ( ) and then add an arrow => that points to the function body surrounded in { } like this:
+
+const rectangleArea = (width, height) => {
+  let area = width * height;
+  return area;
+};
+
+ARRAY METHODS;
+.join(), .slice(), .splice(), .shift(), .unshift(), and .concat(),
+.pop() and .push();
+
+FOR LOOP;
+The for loop syntax looks like this:
+
+for (let counter = 0; counter < 4; counter++) {
+  console.log(counter);
+}
+The initialization is let counter = 0, so the loop will start counting at 0.
+The stopping condition is counter < 4, meaning the loop will run as long as the iterator variable, counter, is less than 4.
+The iteration statement is counter++. This means after each loop, the value of counter will increase by 1. For the first iteration counter will equal 0, for the second iteration counter will equal 1, and so on.
+The code block is inside of the curly braces,
+  </script>
+</body>
+</html>
